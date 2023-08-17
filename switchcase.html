@@ -1,0 +1,67 @@
+<!-- 1.Demonstrate the use of switch case -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <script>
+
+      // Task 1
+      function sum(n1, n2) {
+         console.log(n1 + n2)
+      }
+
+      sum(45, 65)
+
+
+      // Task 2
+      function years() {
+         y = 2023
+         switch (y % 4) {
+            case 0: console.log("Yes it is a leap year "); break;
+            case 1: console.log("It is not a leap year "); break;
+            case 2: console.log("It is not a leap year "); break;
+            case 3: console.log("It is not a leap year "); break;
+         }
+      }
+      years()
+
+
+      // Task 3
+      grade = () => {
+         let m1 = 80
+         let m2 = 70
+         let m3 = 65
+         let m4 = 93
+
+         let percent = (((m1 + m2 + m3 + m4) / 400) * 100)
+         console.log(percent)
+         if (percent >= 80) {
+            console.log("O Grade")
+         }
+         else if (percent >= 60) {
+            console.log("A Grade")
+         }
+         else if (percent >= 50) {
+            console.log("B Grade")
+         }
+         else if (percent >= 40) {
+            console.log("C Grade")
+         }
+         else {
+            console.log("Fail")
+         }
+
+      }
+      grade()
+   </script>
+
+</body>
+
+</html>
